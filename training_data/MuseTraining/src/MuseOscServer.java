@@ -17,7 +17,8 @@ public class MuseOscServer {
 
     OscP5 museServer;
     static int recvPort = 5000;
-    static int cnt = 4000;
+    static int cntOG = 3000;
+    static int cnt = cntOG;
     static int elements = 4;
     static double[] things = new double[cnt * elements];
     static PrintWriter writer;
@@ -43,8 +44,8 @@ public class MuseOscServer {
         } else {
             System.out.println("done close this program");
             try {
-                writer = new PrintWriter(new File("file.txt"));
-                writer.println(cnt);
+                writer = new PrintWriter(new File("Romance_0_1.txt"));
+                writer.println(cntOG);
                 writer.println(elements);
                 for (int i = 0; i < things.length; i++) {
                     writer.println(things[i]);
