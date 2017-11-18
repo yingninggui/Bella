@@ -58,25 +58,25 @@ edm = sp.playlist( playlist_id)
 edmrandom = random.SystemRandom()
 
 #hip-hop playlist to list 
-uriHiphop = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
+uriHiphop = 'spotify:user:spotify:playlist:37i9dQZF1DWY4xHQp97fN6'
 playlist_id = uriBlues.split(':')[4]
 hiphop = sp.playlist( playlist_id)
 hiphoprandom = random.SystemRandom()
 
 #pop playlist to list 
-uriPop = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
+uriPop = 'spotify:user:spotify:playlist:37i9dQZF1DXarRysLJmuju'
 playlist_id = uriBlues.split(':')[4]
 pop = sp.playlist( playlist_id)
 poprandom = random.SystemRandom()
 
 #rock laylist to list 
-uriRock = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
+uriRock = 'spotify:user:spotify:playlist:37i9dQZF1DWXRqgorJj26U'
 playlist_id = uriBlues.split(':')[4]
 rock = sp.playlist( playlist_id)
 rockrandom = random.SystemRandom()
 
 #romance playlist to list 
-uriRomance = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
+uriRomance = 'spotify:user:spotify:playlist:37i9dQZF1DX5IDTimEWoTd'
 playlist_id = uriBlues.split(':')[4]
 romance = sp.playlist( playlist_id)
 romancerandom = random.SystemRandom() 
@@ -87,47 +87,47 @@ myPlaylist = []
 while true:
     
     #blues 
-    if (case==1):
+    if (case==0):
         song = bluesrandom.choice(blues); 
         myPlaylist.append(song)
         
     #chill
-    elif(case==2):
+    elif(case==1):
         song = sp.search(q=genre)
         myPlaylist.append(song)
         
     #classical 
-    elif(case==3):
+    elif(case==2):
         song = sp.search(q=genre)
         myPlaylist.append(song)
         
     #country 
-    elif(case==4):
+    elif(case==3):
         song = sp.search(q=genre)
         myPlaylist.append(song)
         
     #electronic/dance 
-    elif(case==5):
+    elif(case==4):
         song = sp.search(q=genre)
         myPlaylist.append(song)
         
     #hip-hop
-    elif(case==6):
+    elif(case==5):
         song = sp.search(q=genre)
         myPlaylist.append(song)
         
     #pop 
-    elif(case==7):
+    elif(case==6):
         song = sp.search(q=genre)
         myPlaylist.append(song)
         
     #rock 
-    elif(case==8):
+    elif(case==7):
         song = sp.search(q=genre)
         myPlaylist.append(song)
         
     #romance 
-    elif(case==9):
+    elif(case==8):
         song = sp.search(q=genre)
         
     else:
