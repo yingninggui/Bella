@@ -62,8 +62,6 @@ def write_net_to_file (net, filename):
     file.close()
     return "Success, wrote to " + filename
 
-
-
 def normalize (data, num):
     n_data = len(data)
     random.shuffle(data)
@@ -75,10 +73,16 @@ def normalize (data, num):
         new_data.append(r)
     return new_data
 
+def set_net_weights_biases (net, w, b):
+    return net.set_weights_biases(w, b)
+
+def perform_sgd (net, epochs, mini_batch_size, training_inputs, expected_outputs,
+                                    step_size, lmbda = 0, test_input=None, test_output=None):
+    net.stochastic_gradient_descent(epochs, mini_batch_size, training_inputs, expected_outputs,
+                                    step_size, lmbda, test_input=None, test_output=None)
+
 net = ffn.Net([8, 50, 50, 9])
 generes = ["Blues", "Chill", "Classical", "Country", "Eletronic/Dance", "Hip-Hop", "Pop", "Rock", "Romance"]
 generes_to_int = {g:i for i,g in enumerate(generes)}
 int_to_generes = {i:g for i,g in enumerate(generes)}
-
-print(normalize([[1,0],[0,3],[5,11]], 3))
 
