@@ -1,11 +1,11 @@
 import random
 import math
-import functions
+import functions as fn
 import numpy as np
 
 # -- Class for the neural network
 class Net:
-    def __init__(self, layer_sizes, cost=Functions.CrossEntropy, logistic_func=Functions.Sigmoid):
+    def __init__(self, layer_sizes, cost=fn.CrossEntropy, logistic_func=fn.Sigmoid):
         self.__layer_sizes = layer_sizes
         self.__n_layers = len(layer_sizes)
 
@@ -89,7 +89,7 @@ class Net:
             for x in range(len(self.__weights)):
                 for y in range(len(self.__weights[x])):
                     for z in range(len(self.__weights[x][y])):
-                        self.__weights[x][y][z] -= Functions.sign(self.__weights[x][y][z])*reg
+                        self.__weights[x][y][z] -= fn.sign(self.__weights[x][y][z])*reg
         elif regularization_type == 'L2':
             #L2 Regularization
             reg = lmbda/training_set_size
@@ -127,7 +127,7 @@ class Net:
             if res == ind:
                 correct += 1
 
-        return correct / n_tests;
+        return correct / n_tests
 
     # Performs SGD to network
     def stochastic_gradient_descent(self, epochs, mini_batch_size, training_inputs, expected_outputs,
