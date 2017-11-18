@@ -7,7 +7,7 @@ import requests
 import json
 import time
 
-import six
+# import six
 
 """ A simple and thin Python library for the Spotify Web API
 """

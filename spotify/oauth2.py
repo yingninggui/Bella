@@ -8,8 +8,8 @@ import time
 import sys
 
 # Workaround to support both python 2 & 3
-import six
-import six.moves.urllib.parse as urllibparse
+# import six
+# import six.moves.urllib.parse as urllibparse
 
 
 class SpotifyOauthError(Exception):
