@@ -1,3 +1,3 @@
-#### FreePlay
+# FreePlay
 
-## Skip the shuffle and get curated music for every instance. 
+###### Skip the shuffle and get curated music for every instance. 
