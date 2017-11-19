@@ -1,7 +1,9 @@
 import random
-import math
-import functions as fn
+
 import numpy as np
+
+import src.functions as fn
+
 
 # -- Class for the neural network
 class Net:

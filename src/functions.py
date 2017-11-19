@@ -51,33 +51,6 @@ class SoftMax:
             d[x] = (s - a[x]) / s ** 2
         return d
 
-# NEED TO FIX
-class LeakyReLU:
-    @staticmethod
-    def func(a):
-        if type(a) is np.ndarray:
-            for x in range(len(a)):
-                if a[x] < 0:
-                    a[x] *= 0.001
-        else:
-            if a < 0:
-                a *= .001
-        return a
-
-    @staticmethod
-    def func_deriv(a):
-        if type(a) is np.ndarray:
-            for x in range(len(a)):
-                if a[x] < 0:
-                    a[x] = 0.001
-                else:
-                    a[x] = 1
-        else:
-            if a < 0:
-                return 0.001
-            return 1
-        return a
-
 # -- Class defining quadratic cost
 class QuadraticCost:
     # Returns the cost for given vectors output and expected by C = sum(norm_sqrd(exp-out))/2(num_tests)
@@ -103,7 +76,7 @@ class QuadraticCost:
     # Returns the error vector for the output layer by d = (a-y)*sig_p(z)
     @staticmethod
     def delta(out, exp, z):
-        return (out-exp)*Sigmoid.func_prime_vec(z)
+        return (out-exp)*Sigmoid.func_deriv(z)
 
 # -- Class defining cross entropy
 class CrossEntropy:
