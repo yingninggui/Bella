@@ -26,7 +26,7 @@ class Sigmoid:
     @staticmethod
     # Returns sigmoid function applies to a value a by the mapping SIG: a |--> 1/(1+e^-a)
     def func(a):
-        return 1 / (1 + np.exp(-a))
+        return 1/(1+np.exp(-a))
 
     @staticmethod
     # Returns the sigmoid prime of a value a by the mapping SIG_P: a |--> SIG(a)*(1-SIG(a))
