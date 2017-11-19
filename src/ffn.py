@@ -94,8 +94,8 @@ class Net:
                         self.__weights[x][y][z] -= fn.sign(self.__weights[x][y][z])*reg
         elif regularization_type == 'L2':
             #L2 Regularization
-            reg = lmbda/training_set_size
-            self.__weights = [(1-step_size*reg)*w-step_size*gw for w, gw in zip (self.__weights, grad_w)]
+            reg = lmbda/(training_set_size+.0)
+            self.__weights = [((1-step_size*reg)*w)-(step_size*gw) for w, gw in zip (self.__weights, grad_w)]
         else:
             # Unregularized
             self.__weights = [w-avg_step*gw for w, gw in zip(self.__weights, grad_w)]
@@ -151,7 +151,7 @@ class Net:
             mini_batches = [training_data[curr:curr+mini_batch_size] for curr in
                             range(0, len(training_data), mini_batch_size)]
             for batch in mini_batches:
-                self.__update_net_weights_biases(batch, step_size, lmbda, training_set_size, 'L2')
+                self.__update_net_weights_biases(batch, step_size, lmbda, training_set_size)
 
             if test_input:
                 print("Epoch", iters+1, " percent correct", self.evaluate(test_data))

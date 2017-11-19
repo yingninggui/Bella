@@ -15,7 +15,6 @@ class MuseServer(ServerThread):
         self.__predictions = []
         self.__curr_activ = []
         self.__n_size = 300
-        self.__squash = 1000
 
         self.__net = ffn.Net([8, 70, 70, 9])
         wbfilename = "dekdekdekdekdekdekdekdekdek.txt"#INSERT FILENAME HERE
@@ -35,7 +34,9 @@ class MuseServer(ServerThread):
     def eeg_callback(self, path, args):
         l_ear, l_forehead, r_forehead, r_ear = args
 
-        arr = [l_ear/self.__squash, l_forehead/self.__squash,r_forehead/self.__squash,r_ear/self.__squash]
+        arr = np.array([l_ear, l_forehead, r_forehead, r_ear])
+        arr = np.log(arr)
+        arr = arr/10
         self.__curr_activ.append(arr)
 
         if len(self.__curr_activ) == self.__n_size:
