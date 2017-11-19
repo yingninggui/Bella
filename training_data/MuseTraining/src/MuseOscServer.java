@@ -41,8 +41,7 @@ public class MuseOscServer {
                 }
                 cnt--;
             }
-        } else {
-            System.out.println("done close this program");
+        } else if (cnt == 0){
             try {
                 writer = new PrintWriter(new File("Romance_0_1.txt"));
                 writer.println(cntOG);
@@ -51,9 +50,11 @@ public class MuseOscServer {
                     writer.println(things[i]);
                 }
             } catch (Exception e) {
-
             }
+            cnt--;
             writer.close();
+        }else{
+            System.out.println("done close this program");
         }
     }
 }
