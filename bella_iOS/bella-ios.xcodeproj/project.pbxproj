@@ -274,7 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "bonjour-demo-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zaghini.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bella.io;
 				PRODUCT_NAME = "bonjour-demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "bonjour-demo-ios/bonjour-demo-ios-bridging-header.h";
 				SWIFT_VERSION = 3.0;
@@ -287,7 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "bonjour-demo-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zaghini.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bella.io;
 				PRODUCT_NAME = "bonjour-demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "bonjour-demo-ios/bonjour-demo-ios-bridging-header.h";
 				SWIFT_VERSION = 3.0;

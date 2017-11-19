@@ -22,7 +22,7 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 user = sp.user(username)
 pprint.pprint(user)
 playlists = sp.user_playlists(username)
-sp.user_playlist_tracks(user)
+#sp.user_playlist_tracks(user, playlist_id=)
 for playlist in playlists['items']:
    print(playlist['name'])
 
@@ -30,8 +30,9 @@ for playlist in playlists['items']:
    tracks = results['tracks']
    while tracks['next']:
       tracks = sp.next(tracks)
+      print(tracks)
 
-#blues playlist to list 
+#blues playlist to list
 uriBlues = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
 playlist_id = uriBlues.split(':')[4]
 results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
@@ -50,12 +51,12 @@ bluesrandom = random.SystemRandom()
 #chill playlist to list 
 uriChill= 'spotify:user:majesticcasualofficial:playlist:6wjCvkAFovrVIRM8VfZLZG'
 playlist_id = uriChill.split(':')[4]
-##results = sp.user_playlist('majesticcasualofficial', playlist_id, fields="tracks,next")
-##chill = results['tracks']
-##while chill['next']:
-##    chill = sp.next(chill)
+results = sp.user_playlist('majesticcasualofficial', playlist_id, fields="tracks,next")
+chill = results['tracks']
+while chill['next']:
+    chill = sp.next(chill)
 ###chill = sp.playlist(playlist_id)
-##chillrandom = random.SystemRandom()
+chillrandom = random.SystemRandom()
 
 #classical playlist to list 
 uriClassical = 'spotify:user:spotify:playlist:37i9dQZF1DWWEJlAGA9gs0'
@@ -120,7 +121,7 @@ rockrandom = random.SystemRandom()
 #romance playlist to list 
 uriRomance = 'spotify:user:spotify:playlist:37i9dQZF1DX5IDTimEWoTd'
 playlist_id = uriRomance.split(':')[4]
-results = sp.user_playlist('majesticcasualofficial', playlist_id, fields="tracks,next")
+results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
 romance = results['tracks']
 while romance['next']:
     romance = sp.next(romance)
@@ -130,56 +131,53 @@ romancerandom = random.SystemRandom()
 case = raw_input()
 myPlaylist = [] 
 
-while true:
-    
-    #blues 
-    if (case==0):
-        song = bluesrandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    #chill
-    elif(case==1):
-        song = chillsrandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    #classical 
-    elif(case==2):
-        song = classicalrandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    #country 
-    elif(case==3):
-        song = countryrandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    #electronic/dance 
-    elif(case==4):
-        song = edm.choice(blues); 
-        myPlaylist.append(song)
-        
-    #hip-hop
-    elif(case==5):
-        song = hiphoprandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    #pop 
-    elif(case==6):
-        song = poprandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    #rock 
-    elif(case==7):
-        song = rockrandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    #romance 
-    elif(case==8):
-        song = romancerandom.choice(blues); 
-        myPlaylist.append(song)
-        
-    else:
-        break;
+#blues
+if (case==0):
+    song = bluesrandom.choice(blues);
+    myPlaylist.append(song)
 
+#chill
+elif(case==1):
+    song = chillrandom.choice(blues);
+    myPlaylist.append(song)
+
+#classical
+elif(case==2):
+    song = classicalrandom.choice(blues);
+    myPlaylist.append(song)
+
+#country
+elif(case==3):
+    song = countryrandom.choice(blues);
+    myPlaylist.append(song)
+
+#electronic/dance
+elif(case==4):
+    song = edm.choice(blues);
+    myPlaylist.append(song)
+
+#hip-hop
+elif(case==5):
+    song = hiphoprandom.choice(blues);
+    myPlaylist.append(song)
+
+#pop
+elif(case==6):
+    song = poprandom.choice(blues);
+    myPlaylist.append(song)
+
+#rock
+elif(case==7):
+    song = rockrandom.choice(blues);
+    myPlaylist.append(song)
+
+#romance
+elif(case==8):
+    song = romancerandom.choice(blues);
+    myPlaylist.append(song)
+
+
+print("Hello World")
 #take category and find a seed song
 #add music, 9 switch statements
 

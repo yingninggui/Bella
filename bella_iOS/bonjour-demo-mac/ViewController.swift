@@ -47,6 +47,9 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         self.readLabel.stringValue = body! as String
         if (self.readLabel.stringValue == "start"){
             print("legit")
+            
+            // call yg and max's functions
+            // display data
         }
     }
     
