@@ -2,7 +2,7 @@ import random
 
 import numpy as np
 
-import src.functions as fn
+import functions as fn
 
 
 # -- Class for the neural network

@@ -1,6 +1,6 @@
 import random
 import numpy as np
-from src import ffn
+import ffn
 
 generes = ["Blues", "Chill", "Classical", "Country", "EDM", "Hip Hop", "Pop", "Rock", "Romance"]
 n_generes = len(generes)
@@ -101,18 +101,18 @@ def to_one_hot (ind, length):
 
 # This file returns a 2-tuple (data, expected)
 def get_data (generes, generes_to_int):
-    dir = '/home/max/Documents/Hackathons/HW4/FreePlay/training_data/MuseTraining/'
+    dir = '/home/max/Documents/Hackathons/HW4/Bella/training_data/MuseTraining/'
     flnm = ''
     data = []
     exp = []
     for x in generes:
         flnm = x + '_'
-        for y in range(1):
+        for y in range(1,2):
             fl = flnm + str(y) + '_'
             for z in range(3):
                 f = fl + str(z) + '.txt'
                 for a in range(7):
-                    d = normalize(read_data_from_file(dir+f), 200)
+                    d = normalize(read_data_from_file(dir+f), 300)
                     for r in d:
                         data.append(r)
                         exp.append(to_one_hot(generes_to_int[x], len(generes)))
@@ -135,4 +135,5 @@ data, exp = get_data(generes, generes_to_int)
 
 data = [d/1000 for d in data]
 
-net.stochastic_gradient_descent(10000, 100, data, exp, 1, 0.01)
+net.stochastic_gradient_descent(3000, 100, data, exp, 1, 0.01)
+write_net_to_file(net, "neuralnet")
