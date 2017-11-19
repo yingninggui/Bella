@@ -19,17 +19,17 @@ client_credentials_manager = SpotifyClientCredentials(SPOTIPY_CLIENT_ID, SPOTIPY
 #print(client_credentials_manager.get_access_token())
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-##you can print playlists 
-#user = sp.user(username)
-#pprint.pprint(user)
-#playlists = sp.user_playlists(username)
-#for playlist in playlists['items']:
-#   print(playlist['name'])
-##you can print tracks/songs 
-#   results = sp.user_playlist(username, playlist['id'], fields="tracks,next")
-#   tracks = results['tracks']
-#   while tracks['next']:
-#      tracks = sp.next(tracks)
+user = sp.user(username)
+pprint.pprint(user)
+playlists = sp.user_playlists(username)
+sp.user_playlist_tracks(user)
+for playlist in playlists['items']:
+   print(playlist['name'])
+
+   results = sp.user_playlist(username, playlist['id'], fields="tracks,next")
+   tracks = results['tracks']
+   while tracks['next']:
+      tracks = sp.next(tracks)
 
 #blues playlist to list 
 uriBlues = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
@@ -50,12 +50,12 @@ bluesrandom = random.SystemRandom()
 #chill playlist to list 
 uriChill= 'spotify:user:majesticcasualofficial:playlist:6wjCvkAFovrVIRM8VfZLZG'
 playlist_id = uriChill.split(':')[4]
-results = sp.user_playlist('majesticcasualofficial', playlist_id, fields="tracks,next")
-chill = results['tracks']
-while chill['next']:
-    chill = sp.next(chill)
-#chill = sp.playlist(playlist_id)
-chillrandom = random.SystemRandom()
+##results = sp.user_playlist('majesticcasualofficial', playlist_id, fields="tracks,next")
+##chill = results['tracks']
+##while chill['next']:
+##    chill = sp.next(chill)
+###chill = sp.playlist(playlist_id)
+##chillrandom = random.SystemRandom()
 
 #classical playlist to list 
 uriClassical = 'spotify:user:spotify:playlist:37i9dQZF1DWWEJlAGA9gs0'
