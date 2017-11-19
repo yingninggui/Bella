@@ -1,9 +1,11 @@
 import random
-
 import numpy as np
-
 from src import ffn
 
+generes = ["Blues", "Chill", "Classical", "Country", "EDM", "Hip Hop", "Pop", "Rock", "Romance"]
+n_generes = len(generes)
+generes_to_int = {g:i for i,g in enumerate(generes)}
+int_to_generes = {i:g for i,g in enumerate(generes)}
 
 # This method takes the average of n vectors
 def vec_avg (vals):
@@ -127,11 +129,7 @@ def get_out_ind (net, inp):
             ind = i
     return i
 
-net = ffn.Net([8, 50, 50, 9])
-generes = ["Blues", "Chill", "Classical", "Country", "EDM", "Hip Hop", "Pop", "Rock", "Romance"]
-n_generes = len(generes)
-generes_to_int = {g:i for i,g in enumerate(generes)}
-int_to_generes = {i:g for i,g in enumerate(generes)}
+net = ffn.Net([8, 70, 70, 9])
 
 data, exp = get_data(generes, generes_to_int)
 
