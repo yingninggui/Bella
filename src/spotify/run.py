@@ -12,9 +12,9 @@ class MuseServer(ServerThread):
     #listen for messages on port 5000
     def __init__(self):
         self.__curr_song_type = 0
-        self.__predictions = []
-        self.__curr_activ = []
-        self.__n_size = 300
+        #self.__predictions = []
+        #self.__curr_activ = []
+        #self.__n_size = 300
 
         self.__net = ffn.Net([8, 70, 70, 9])
         wbfilename = "neuralnet.txt"
@@ -36,42 +36,44 @@ class MuseServer(ServerThread):
 
         arr = np.array([l_ear, l_forehead, r_forehead, r_ear])
         self.__curr_activ.append(arr)
-        if len(self.__curr_activ) == self.__n_size:
-            inp = training.normalize(self.__curr_activ)
-            inp = np.log(inp)
-            inp = inp/10
-            outp = training.get_out_ind(self.__net, inp)
-            print(outp)
-            self.__curr_song_type = outp
-            self.__predictions.append(outp)
-            self.__curr_activ =[]
+            #if len(self.__curr_activ) == self.__n_size:
+        inp = training.normalize(self.__curr_activ)
+        inp = np.log(inp)
+        inp = inp/10
+        outp = training.get_out_ind(self.__net, inp)
+            #print(outp)
+        self.__curr_song_type = outp
+    #self.__predictions.append(outp)
+    #self.__curr_activ =[]
         #print(self.__curr_song_type)
         #print("djakslfhkjsdfhkjsdhfksjdfhlskdjfhslkdjfhasldkjfhsldkjf")
         #print "%s %f %f %f %f" % (path, l_ear, l_forehead, r_forehead, r_ear)
 
     # This method gets the current prediction for the next song type without resetting variables
     #   should be used if not changing to next song
-    def get_next_song_type (self):
-        cnt = np.zeros(9)
-        for x in self.__predictions:
-            cnt[x]+=1
-        ind = 0
-        max = cnt[0]
-        for x in range(1,9):
-            if cnt[x] > max:
-                max = cnt[x]
-                ind = x
-        return x
+#def get_next_song_type (self):
+    #cnt = np.zeros(9)
+    #for x in self.__predictions:
+    #  cnt[x]+=1
+    #ind = 0
+    #max = cnt[0]
+    #for x in range(1,9):
+    #if cnt[x] > max:
+    #max = cnt[x]
+    #ind = x
+    #return x
 
     # This method gets the prediction for the next song and resetting variables
     #   should be used if changing song
-    def next_song (self):
-        x = self.get_next_song_type()
-        self.__curr_song_type=0
-        self.__predictions = []
-        self.__curr_activ = []
+    #def next_song (self):
+    #x = self.get_next_song_type()
+    #self.__curr_song_type=0
+    #self.__predictions = []
+    #self.__curr_activ = []
 
-        return x
+#return x
+    def get_curr_song_type(self):
+        return self.__curr_song_type
 
     #handle unexpected messages
     @make_method(None, None)

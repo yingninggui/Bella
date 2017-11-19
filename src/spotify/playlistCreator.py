@@ -14,12 +14,16 @@ from flask import Flask, request, redirect, g, render_template
 import requests
 import base64
 from urlparse import urlparse
+import run
 
 CLIENT_ID = "eaef1e6ac22344f181edd44e36a48863"
 CLIENT_SECRET = "9b8ae1b5beed43bc9b210ac263b327ba"
 
+
 username = '22twkvspkih7nwqom5dlty3hi'
 scope = 'playlist-modify-public'
+
+muse = run.MuseServer()
 
 token = util.prompt_for_user_token(username, scope, client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri='http://localhost:8000/callback/')
 sp = spotipy.Spotify(auth=token)
@@ -36,7 +40,7 @@ def addNext(track_id):
     sp.user_playlist_add_tracks(username, playlist_id2, track_id)
 
 
-case = input("Enter a number: ")
+case = muse.get_curr_song_type()
 uriBlues = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
 playlist_blues = uriBlues.split(':')[4]
 lengthBlues = sp.user_playlist_tracks('spotify', playlist_blues)[u'items']
@@ -170,14 +174,14 @@ def findSong(case):
 
 temp1=findSong(case)
 addSong(temp1)
-addSong(findSong(input("Enter")))
+addSong(findSong(muse.get_curr_song_type())
 
 while True:
-    temp2 = findSong(input("Enter"))
+    temp2 = findSong(muse.get_curr_song_type())
     if temp1!=temp2:
-        if sp.tracks(sp.user_playlist_tracks(username, playlist_id2)[u'items'][len(sp.user_playlist_tracks(username, playlist_id2)[u'items'])-1][u'track'][u'uri'])[0] == sp.currently_playing() :
-            addSong(temp2)
-        else:
-            addNext(temp2)
+        #if sp.tracks(sp.user_playlist_tracks(username, playlist_id2)[u'items'][len(sp.user_playlist_tracks(username, playlist_id2)[u'items'])-1][u'track'][u'uri'])[0] == sp.currently_playing() :
+        addSong(temp2)
+        #else:
+            #addNext(temp2)
     temp1=temp2
     time.sleep(10)
