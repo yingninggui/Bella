@@ -17,7 +17,7 @@ class MuseServer(ServerThread):
         self.__n_size = 300
 
         self.__net = ffn.Net([8, 70, 70, 9])
-        wbfilename = "dekdekdekdekdekdekdekdekdek.txt"#INSERT FILENAME HERE
+        wbfilename = "neuralnet.txt"
         w, b = training.read_net_from_file(wbfilename)
         training.set_net_weights_biases(self.__net, w, b)
 
