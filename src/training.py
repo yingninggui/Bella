@@ -81,15 +81,11 @@ def write_net_to_file (net, filename):
     return "Success, wrote to " + filename
 
 # This method takes the average of n vectors and the standard deviation of n vectors and puts them into one vector
-def normalize (data, num):
-    n_data = len(data)
-    new_data = []
-    for x in range(0, n_data, num):
-        a = vec_avg(data[x:x+num])
-        s = vec_std_dev(data[x:x+num])
-        r = np.concatenate((a, s))
-        new_data.append(r)
-    return new_data
+def normalize (data):
+    a = np.mean(data, axis=0)
+    s = np.std(data, axis=0)
+    r = np.concatenate((a, s))
+    return r
 
 # This method sets the weights and biases for a feed forward neural network
 def set_net_weights_biases (net, w, b):
@@ -127,6 +123,7 @@ def get_data (generes, generes_to_int):
 # This method returns the index of the highest activation from the outputs of a neural network given an input = inp
 def get_out_ind (net, inp):
     out = net.feed_forward(inp)
+    print(out)
     max = out[0]
     ind = 0
     for i, x in enumerate(out[1:]):
@@ -204,19 +201,19 @@ def update_data_set (filename, new_data, song_ind):
     return "Wrote successfully"
 
 
-net = ffn.Net([8, 70, 70, 9])
-#w, b = read_net_from_file("neuralnet.txt")
-#set_net_weights_biases(net, w, b)
-
-data, exp = get_data(generes, generes_to_int)
-
-for i, x in enumerate(data):
-    data[i] = np.log(x)
-    data[i] = data[i]/10
-
-
-net.stochastic_gradient_descent(1000, 100, data, exp, 1, 0)
-net.stochastic_gradient_descent(1000, 100, data, exp, .05, 0)
-net.stochastic_gradient_descent(5000, 100, data, exp, .002, 0)
-
-print(write_net_to_file(net, "neuralnet2.txt"))
+# net = ffn.Net([8, 70, 70, 9])
+# #w, b = read_net_from_file("neuralnet.txt")
+# #set_net_weights_biases(net, w, b)
+#
+# data, exp = get_data(generes, generes_to_int)
+#
+# for i, x in enumerate(data):
+#     data[i] = np.log(x)
+#     data[i] = data[i]/10
+#
+#
+# net.stochastic_gradient_descent(1000, 100, data, exp, 1, 0)
+# net.stochastic_gradient_descent(1000, 100, data, exp, .05, 0)
+# net.stochastic_gradient_descent(5000, 100, data, exp, .002, 0)
+#
+# print(write_net_to_file(net, "neuralnet2.txt"))

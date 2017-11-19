@@ -35,18 +35,19 @@ class MuseServer(ServerThread):
         l_ear, l_forehead, r_forehead, r_ear = args
 
         arr = np.array([l_ear, l_forehead, r_forehead, r_ear])
-        arr = np.log(arr)
-        arr = arr/10
         self.__curr_activ.append(arr)
-
         if len(self.__curr_activ) == self.__n_size:
             inp = training.normalize(self.__curr_activ)
-            outp = training.get_out_ind(inp)
+            inp = np.log(inp)
+            inp = inp/10
+            outp = training.get_out_ind(self.__net, inp)
+            print(outp)
             self.__curr_song_type = outp
             self.__predictions.append(outp)
             self.__curr_activ =[]
-
-        print "%s %f %f %f %f" % (path, l_ear, l_forehead, r_forehead, r_ear)
+        #print(self.__curr_song_type)
+        #print("djakslfhkjsdfhkjsdhfksjdfhlskdjfhslkdjfhasldkjfhsldkjf")
+        #print "%s %f %f %f %f" % (path, l_ear, l_forehead, r_forehead, r_ear)
 
     # This method gets the current prediction for the next song type without resetting variables
     #   should be used if not changing to next song
