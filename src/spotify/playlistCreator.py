@@ -16,10 +16,10 @@ import base64
 from urlparse import urlparse
 from run import MuseServer
 
-CLIENT_ID = "eaef1e6ac22344f181edd44e36a48863"
-CLIENT_SECRET = "9b8ae1b5beed43bc9b210ac263b327ba"
+CLIENT_ID = "//////"
+CLIENT_SECRET = "///////"
 
-username = '22twkvspkih7nwqom5dlty3hi'
+username = '///////'
 scope = 'playlist-modify-public'
 
 muse = MuseServer()
