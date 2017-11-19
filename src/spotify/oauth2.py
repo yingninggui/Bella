@@ -35,6 +35,7 @@ class SpotifyClientCredentials(object):
         constructor or set SPOTIPY_CLIENT_ID and SPOTIPY_CLIENT_SECRET
         environment variables
         """
+        print(client_id)
         if not client_id:
             client_id = os.getenv('SPOTIPY_CLIENT_ID')
 
