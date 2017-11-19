@@ -200,6 +200,14 @@ class Spotify(object):
         else:
             return None
 
+    def currently_playing(self, market = None):
+        ''' Get user's currently playing track.
+
+            Parameters:
+                - market - an ISO 3166-1 alpha-2 country code.
+        '''
+        return self._get("me/player/currently-playing", market = market)
+
     def previous(self, result):
         """ returns the previous result given a paged result
 
@@ -899,13 +907,7 @@ class Spotify(object):
         '''
         return self._get("me/player", market = market)
 
-    def currently_playing(self, market = None):
-        ''' Get user's currently playing track.
 
-            Parameters:
-                - market - an ISO 3166-1 alpha-2 country code.
-        '''
-        return self._get("me/player/currently-playing", market = market)
 
     def transfer_playback(self, device_id, force_play = True):
         ''' Transfer playback to another device.
