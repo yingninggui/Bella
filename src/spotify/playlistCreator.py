@@ -176,7 +176,7 @@ temp1=findSong(case)
 addSong(temp1)
 addSong(findSong(muse.get_curr_song_type())
 
-while True:
+while 1==1:
     temp2 = findSong(muse.get_curr_song_type())
     if temp1!=temp2:
         #if sp.tracks(sp.user_playlist_tracks(username, playlist_id2)[u'items'][len(sp.user_playlist_tracks(username, playlist_id2)[u'items'])-1][u'track'][u'uri'])[0] == sp.currently_playing() :
