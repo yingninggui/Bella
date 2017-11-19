@@ -2,8 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1d59d0-346c-4ec4-8149-6632ad88f2f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ffn.py" afterPath="$PROJECT_DIR$/src/ffn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/training.py" afterPath="$PROJECT_DIR$/src/training.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/MuseTraining.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Pop_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Rock_1_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Romance_1_9.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Hip Hop_1_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Hip Hop_1_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Pop_1_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Pop_1_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Rock_1_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Rock_1_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Romance_1_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Romance_1_1.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Blues_1_0.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_0.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Blues_1_1.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Blues_1_2.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Chill_1_0.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_0.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Chill_1_1.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Chill_1_2.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Chill_1_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Classical_1_0.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_0.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Classical_1_1.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Classical_1_2.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Country_1_0.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_0.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Country_1_1.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Country_1_2.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Country_1_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/EDM_1_0.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_0.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/EDM_1_1.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/EDM_1_2.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Hip Hop_1_1.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_0.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Pop_1_0.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/EDM_1_7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Rock_1_2.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/Classical_1_3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/training_data/MuseTraining/Romance_1_2.txt" afterPath="$PROJECT_DIR$/training_data/MuseTraining/data/HipHop_1_5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,12 +111,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ffn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ffn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="104">
               <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
               <folding />
             </state>
@@ -27,23 +127,29 @@
       <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1040">
+              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MuseTraining.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/training_data/MuseTraining/MuseTraining.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,10 +176,17 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1420" />
-    <option name="height" value="853" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -109,110 +222,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Bella" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bella" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bella" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bella" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bella" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bella" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="spotify" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="/" type="cbb8eebc:String" user="/" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="/" type="cbb8eebc:String" user="/" />
-              <item name="home" type="cbb8eebc:String" user="home" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="/" type="cbb8eebc:String" user="/" />
-              <item name="home" type="cbb8eebc:String" user="home" />
-              <item name="max" type="cbb8eebc:String" user="max" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="/" type="cbb8eebc:String" user="/" />
-              <item name="home" type="cbb8eebc:String" user="home" />
-              <item name="max" type="cbb8eebc:String" user="max" />
-              <item name="Documents" type="cbb8eebc:String" user="Documents" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="/" type="cbb8eebc:String" user="/" />
-              <item name="home" type="cbb8eebc:String" user="home" />
-              <item name="max" type="cbb8eebc:String" user="max" />
-              <item name="Documents" type="cbb8eebc:String" user="Documents" />
-              <item name="Hackathons" type="cbb8eebc:String" user="Hackathons" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="/" type="cbb8eebc:String" user="/" />
-              <item name="home" type="cbb8eebc:String" user="home" />
-              <item name="max" type="cbb8eebc:String" user="max" />
-              <item name="Documents" type="cbb8eebc:String" user="Documents" />
-              <item name="Hackathons" type="cbb8eebc:String" user="Hackathons" />
-              <item name="HW4" type="cbb8eebc:String" user="HW4" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="/" type="cbb8eebc:String" user="/" />
-              <item name="home" type="cbb8eebc:String" user="home" />
-              <item name="max" type="cbb8eebc:String" user="max" />
-              <item name="Documents" type="cbb8eebc:String" user="Documents" />
-              <item name="Hackathons" type="cbb8eebc:String" user="Hackathons" />
-              <item name="HW4" type="cbb8eebc:String" user="HW4" />
-              <item name="Bella" type="cbb8eebc:String" user="Bella" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="FreePlay">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="FreePlay">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="training_data">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MuseTraining">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="FreePlay">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -221,6 +284,12 @@
         <option name="myModuleName" value="Bella" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\libil\PycharmProjects\FreePlay\training_data\MuseTraining" />
+      <recent name="C:\Users\libil\PycharmProjects\FreePlay\training_data\MuseTraining\data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -235,7 +304,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.training">
-    <configuration name="playlistCreator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="playlistCreator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -247,12 +316,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Bella" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/spotify/playlistCreator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
     </configuration>
-    <configuration name="training" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="training" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -264,10 +335,155 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="src" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/training.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FreePlay" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FreePlay" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FreePlay" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="FreePlay" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FreePlay" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FreePlay" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.playlistCreator" />
@@ -297,14 +513,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="-4" width="1853" height="1084" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18888289" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19243243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -319,6 +536,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -338,11 +558,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ffn.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ffn.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -350,9 +592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2313">
           <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -381,29 +621,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1040">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ffn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="104">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training_data/MuseTraining/data/Blues_1_4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="132">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training_data/MuseTraining/MuseTraining.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
