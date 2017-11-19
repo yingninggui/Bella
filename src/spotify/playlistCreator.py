@@ -4,180 +4,170 @@ import sys
 import spotipy
 import client
 import random
-import json
 import pprint
 import spotipy.util as util 
 from spotipy.oauth2 import SpotifyClientCredentials 
 from spotipy.client import Spotify
+import json
+from flask import Flask, request, redirect, g, render_template
+import requests
+import base64
+from urlparse import urlparse
 
-#administrative 
-SPOTIPY_CLIENT_ID = 'eaef1e6ac22344f181edd44e36a48863'
-SPOTIPY_CLIENT_SECRET = '9b8ae1b5beed43bc9b210ac263b327ba'
+CLIENT_ID = "eaef1e6ac22344f181edd44e36a48863"
+CLIENT_SECRET = "9b8ae1b5beed43bc9b210ac263b327ba"
+
 username = '22twkvspkih7nwqom5dlty3hi'
+scope = 'playlist-modify-public'
 
-client_credentials_manager = SpotifyClientCredentials(SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET)
-#print(client_credentials_manager.get_access_token())
-sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+token = util.prompt_for_user_token(username,scope,client_id=CLIENT_ID,client_secret=CLIENT_SECRET, redirect_uri='http://localhost:8000/callback/')
 
-user = sp.user(username)
-pprint.pprint(user)
-playlists = sp.user_playlists(username)
-#sp.user_playlist_tracks(user, playlist_id=)
-for playlist in playlists['items']:
-   print(playlist['name'])
+sp=spotipy.Spotify(auth=token)
 
-   results = sp.user_playlist(username, playlist['id'], fields="tracks,next")
-   tracks = results['tracks']
-   while tracks['next']:
-      tracks = sp.next(tracks)
-      print(tracks)
+uri2 = 'spotify:user:22twkvspkih7nwqom5dlty3hi:playlist:5g4u6my7planc05uGHcHr1'
+playlist_id2 = uri2.split(':')[4]
+def addSong(track_id):
+    sp.user_playlist_add_tracks(username, playlist_id2,track_id)
 
-#blues playlist to list
-uriBlues = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
-playlist_id = uriBlues.split(':')[4]
-results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
-blues = results['tracks']
-while blues['next']:
-    blues = sp.next(blues)
-#blues = sp.playlist(playlist_id)
-bluesrandom = random.SystemRandom()
+def main():
+    case = input("Enter a number: ")
+    uriBlues = 'spotify:user:spotify:playlist:37i9dQZF1DX2iUghHXGIjj'
+    playlist_blues = uriBlues.split(':')[4]
+    lengthBlues = sp.user_playlist_tracks('spotify', playlist_blues)[u'items']
+    songsBlues = []
+    for i in range(len(lengthBlues)):
+        songsBlues.append(sp.user_playlist_tracks('spotify', playlist_blues)[u'items'][i][u'track'][u'uri'])
 
-#will this work ever
-##def show_tracks(tracks):
-##    for i, item in enumerate(tracks['items']):
-##        track = item['track']
-##        print "   %d %32.32s %s" % (i, track['artists'][0]['name'],track['name'])
+    uriChill = 'spotify:user:majesticcasualofficial:playlist:6wjCvkAFovrVIRM8VfZLZG'
+    playlist_chill = uriChill.split(':')[4]
+    lengthChill = sp.user_playlist_tracks('majesticcasualofficial', playlist_chill)[u'items']
+    songsChill = []
+    for i in range(len(lengthChill)):
+        songsChill.append(sp.user_playlist_tracks('majesticcasualofficial', playlist_chill)[u'items'][i][u'track'][u'uri'])
 
-#chill playlist to list 
-uriChill= 'spotify:user:majesticcasualofficial:playlist:6wjCvkAFovrVIRM8VfZLZG'
-playlist_id = uriChill.split(':')[4]
-results = sp.user_playlist('majesticcasualofficial', playlist_id, fields="tracks,next")
-chill = results['tracks']
-while chill['next']:
-    chill = sp.next(chill)
-###chill = sp.playlist(playlist_id)
-chillrandom = random.SystemRandom()
+    uriClassical = 'spotify:user:spotify:playlist:37i9dQZF1DWWEJlAGA9gs0'
+    playlist_classical = uriClassical.split(':')[4]
+    lengthClassical = sp.user_playlist_tracks('spotify', playlist_classical)[u'items']
+    songsClassical = []
+    for i in range(len(lengthClassical)):
+        songsClassical.append(sp.user_playlist_tracks('spotify', playlist_classical)[u'items'][i][u'track'][u'uri'])
 
-#classical playlist to list 
-uriClassical = 'spotify:user:spotify:playlist:37i9dQZF1DWWEJlAGA9gs0'
-playlist_id = uriClassical.split(':')[4]
-results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
-classical = results['tracks']
-while classical['next']:
-    classical = sp.next(classical)
-#classical = sp.playlist( playlist_id)
-classicalrandom = random.SystemRandom()
+    uriCountry = 'spotify:user:spotify:playlist:37i9dQZF1DWYV2Gh2QglGo'
+    playlist_country = uriCountry.split(':')[4]
+    lengthCountry = sp.user_playlist_tracks('spotify', playlist_country)[u'items']
+    songsCountry = []
+    for i in range(len(lengthCountry)):
+        songsCountry.append(sp.user_playlist_tracks('spotify', playlist_country)[u'items'][i][u'track'][u'uri'])
 
-#country playlist to list 
-uriCountry = 'spotify:user:spotify:playlist:37i9dQZF1DWYV2Gh2QglGo'
-playlist_id = uriCountry.split(':')[4]
-results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
-country = results['tracks']
-while country['next']:
-    country = sp.next(country)
-#country = sp.playlist(playlist_id)
-countryrandom = random.SystemRandom()
+    uriEdm = 'spotify:user:spotify:playlist:37i9dQZF1DX8tZsk68tuDw'
+    playlist_edm = uriEdm.split(':')[4]
+    lengthEdm = sp.user_playlist_tracks('spotify', playlist_edm)[u'items']
+    songsEdm = []
+    for i in range(len(lengthEdm)):
+        songsEdm.append(sp.user_playlist_tracks('spotify', playlist_edm)[u'items'][i][u'track'][u'uri'])
 
-#eletronic/dance playlist to list 
-uriEdm = 'spotify:user:verts87:playlist:1M55NZEq0b79IhafDd9UP0'
-playlist_id = uriEdm.split(':')[4]
-results = sp.user_playlist('verts87', playlist_id, fields="tracks,next")
-edm = results['tracks']
-while edm['next']:
-    edm = sp.next(edm)
-#edm = sp.playlist(playlist_id)
-edmrandom = random.SystemRandom()
+    uriHiphop = 'spotify:user:spotify:playlist:37i9dQZF1DWY4xHQp97fN6'
+    playlist_hiphop = uriHiphop.split(':')[4]
+    lengthHiphop = sp.user_playlist_tracks('spotify', playlist_hiphop)[u'items']
+    songsHiphop = []
+    for i in range(len(lengthtHiphop)):
+        songsHiphop.append(sp.user_playlist_tracks('spotify', playlist_hiphop)[u'items'][i][u'track'][u'uri'])
 
-#hip-hop playlist to list 
-uriHiphop = 'spotify:user:spotify:playlist:37i9dQZF1DWY4xHQp97fN6'
-playlist_id = uriHiphop.split(':')[4]
-results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
-hiphop = results['tracks']
-while hiphop['next']:
-    hiphop = sp.next(hiphop)
-#hiphop = sp.playlist(playlist_id)
-hiphoprandom = random.SystemRandom()
+    uriPop = 'spotify:user:spotify:playlist:37i9dQZF1DXarRysLJmuju'
+    playlist_pop = uriPop.split(':')[4]
+    lengthPop = sp.user_playlist_tracks('spotify', playlist_pop)[u'items']
+    songsPop = []
+    for i in range(len(lengthPop)):
+        songsPop.append(sp.user_playlist_tracks('spotify', playlist_pop)[u'items'][i][u'track'][u'uri'])
 
-#pop playlist to list 
-uriPop = 'spotify:user:spotify:playlist:37i9dQZF1DXarRysLJmuju'
-playlist_id = uriPop.split(':')[4]
-results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
-pop = results['tracks']
-while pop['next']:
-    pop = sp.next(pop)
-#pop = sp.playlist(playlist_id)
-poprandom = random.SystemRandom()
+    uriRock = 'spotify:user:spotify:playlist:37i9dQZF1DWXRqgorJj26U'
+    playlist_rock = uriRock.split(':')[4]
+    lengthRock = sp.user_playlist_tracks('spotify', playlist_rock)[u'items']
+    songsRock = []
+    for i in range(len(lengthRock)):
+        songsRock.append(sp.user_playlist_tracks('spotify', playlist_rock)[u'items'][i][u'track'][u'uri'])
 
-#rock laylist to list 
-uriRock = 'spotify:user:spotify:playlist:37i9dQZF1DWXRqgorJj26U'
-playlist_id = uriRock.split(':')[4]
-results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
-rock = results['tracks']
-while rock['next']:
-    rock = sp.next(rock)
-#rock = sp.playlist(playlist_id)
-rockrandom = random.SystemRandom()
+    uriRomance = 'spotify:user:spotify:playlist:37i9dQZF1DX5IDTimEWoTd'
+    playlist_romance = uriRomance.split(':')[4]
+    lengthRomance = sp.user_playlist_tracks('spotify', playlist_romance)[u'items']
+    songsRomance = []
+    for i in range(len(lengthRomance)):
+        songsRomance.append(sp.user_playlist_tracks('spotify', playlist_romance)[u'items'][i][u'track'][u'uri'])
 
-#romance playlist to list 
-uriRomance = 'spotify:user:spotify:playlist:37i9dQZF1DX5IDTimEWoTd'
-playlist_id = uriRomance.split(':')[4]
-results = sp.user_playlist('spotify', playlist_id, fields="tracks,next")
-romance = results['tracks']
-while romance['next']:
-    romance = sp.next(romance)
-#romance = sp.playlist(playlist_id)
-romancerandom = random.SystemRandom() 
+    #blues
+    if (case==0):
+        r = random.randint(0, len(songsBlues) - 1)
+        print(r)
+        song = []
+        song.append(songsBlues[r])
+        addSong(song)
 
-case = raw_input()
-myPlaylist = [] 
+    #chill
+    elif(case==1):
+        r = random.randint(0, len(songsChill) - 1)
+        print(r)
+        song = []
+        song.append(songsChill[r])
+        addSong(song)
 
-#blues
-if (case==0):
-    song = bluesrandom.choice(blues);
-    myPlaylist.append(song)
-
-#chill
-elif(case==1):
-    song = chillrandom.choice(blues);
-    myPlaylist.append(song)
-
-#classical
-elif(case==2):
-    song = classicalrandom.choice(blues);
-    myPlaylist.append(song)
-
-#country
-elif(case==3):
-    song = countryrandom.choice(blues);
-    myPlaylist.append(song)
-
-#electronic/dance
-elif(case==4):
-    song = edm.choice(blues);
-    myPlaylist.append(song)
-
-#hip-hop
-elif(case==5):
-    song = hiphoprandom.choice(blues);
-    myPlaylist.append(song)
-
-#pop
-elif(case==6):
-    song = poprandom.choice(blues);
-    myPlaylist.append(song)
-
-#rock
-elif(case==7):
-    song = rockrandom.choice(blues);
-    myPlaylist.append(song)
-
-#romance
-elif(case==8):
-    song = romancerandom.choice(blues);
-    myPlaylist.append(song)
+    #classical
+    elif(case==2):
+        r = random.randint(0, len(songsClassical) - 1)
+        print(r)
+        song = []
+        song.append(songsClassical[r])
+        addSong(song)
 
 
-print("Hello World")
-#take category and find a seed song
-#add music, 9 switch statements
+    #country
+    elif(case==3):
+        r = random.randint(0, len(songsCountry) - 1)
+        print(r)
+        song = []
+        song.append(songsCountry[r])
+        addSong(song)
+
+    #electronic/dance
+    elif(case==4):
+        r = random.randint(0, len(songsEdm) - 1)
+        print(r)
+        song = []
+        song.append(songsEdm[r])
+        addSong(song)
+
+    #hip-hop
+    elif(case==5):
+        r = random.randint(0, len(songsHiphop) - 1)
+        print(r)
+        song = []
+        song.append(songsHiphop[r])
+        addSong(song)
+
+    #pop
+    elif(case==6):
+
+        r = random.randint(0, len(songsPop) - 1)
+        print(r)
+        song = []
+        song.append(songsPop[r])
+        addSong(song)
+
+    #rock
+    elif(case==7):
+        r = random.randint(0, len(songsRock) - 1)
+        print(r)
+        song = []
+        song.append(songsRock[r])
+        addSong(song)
+
+    #romance
+    elif(case==8):
+        #uriTest = 'spotify:user:22twkvspkih7nwqom5dlty3hi:playlist:7yBfj4J84zawKqvqbDTVGc'
+        r = random.randint(0, len(songsRomance)-1)
+        print(r)
+        song=[]
+        song.append(songsRomance[r])
+        addSong(song)
+
+main()
 

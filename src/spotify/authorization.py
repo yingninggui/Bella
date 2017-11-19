@@ -7,7 +7,6 @@ import urllib.parse
 # Authentication Steps, paramaters, and responses are defined at https://developer.spotify.com/web-api/authorization-guide/
 # Visit this url to see all the steps, parameters, and expected response.
 
-
 app = Flask(__name__)
 
 #  Client Keys
@@ -24,18 +23,17 @@ SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 
 # Server-side Parameters
 """
-CLIENT_SIDE_URL = "http://localhost"
-PORT = 8888
+CLIENT_SIDE_URL = "http://localhost:"
+PORT = 7000
 REDIRECT_URI = "{}:{}/callback/q".format(CLIENT_SIDE_URL, PORT)
 """
-REDIRECT_URI = "http://localhost:8888/callback"
-PORT = 8888
+REDIRECT_URI = "https://localhost:7000/callback"
+PORT = 7000
 
-SCOPE = "playlist-modify-public playlist-modify-private"
+SCOPE = "playlist-modify-public"
 STATE = "state"
 SHOW_DIALOG_bool = True
 SHOW_DIALOG_str = str(SHOW_DIALOG_bool).lower()
-
 
 auth_query_parameters = {
     "response_type": "code",

@@ -382,6 +382,8 @@ class Spotify(object):
         plid = self._get_id('playlist', playlist_id)
         return self._get("users/%s/playlists/%s" % (user, plid), fields=fields)
 
+
+
     def user_playlist_tracks(self, user, playlist_id=None, fields=None,
                              limit=100, offset=0, market=None):
         """ Get full details of the tracks of a playlist owned by a user.
@@ -449,6 +451,7 @@ class Spotify(object):
         """
         return self._delete("users/%s/playlists/%s/followers" % (user, playlist_id))
 
+
     def user_playlist_add_tracks(self, user, playlist_id, tracks,
                                  position=None):
         """ Adds tracks to a playlist
@@ -463,6 +466,12 @@ class Spotify(object):
         ftracks = [self._get_uri('track', tid) for tid in tracks]
         return self._post("users/%s/playlists/%s/tracks" % (user, plid),
                           payload=ftracks, position=position)
+
+
+        #plid = self._get_id('playlist', playlist_id)
+        #ftracks = tracks
+        #return self._post("users/%s/playlists/%s/tracks" % (user, plid),
+                          #payload=ftracks, position=position)
 
     def user_playlist_replace_tracks(self, user, playlist_id, tracks):
         """ Replace all tracks in a playlist
